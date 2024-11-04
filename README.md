@@ -1,50 +1,12 @@
-# React + TypeScript + Vite
+# FSD + TS + React + Vite project template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Feature-Sliced Design][shields-fsd-image]](https://feature-sliced.design/)
 
-Currently, two official plugins are available:
+Based on official [Vite React Typescript template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts), but slightly changed to match [Feature-Sliced architectural methodology](https://feature-sliced.design/). Here's a list of differences
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clean and empty [`app root`](./src/app/)
+- Directories for minimal set of FSD slices
+- `src/` path alias for absolute import
+- Advanced [`.gitignore`](./.gitignore)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+[shields-fsd-image]: https://img.shields.io/badge/Feature--Sliced-Design-FFFFFF?logoWidth=24&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTMuNS41aDE3djJoLTE3di0yWm0wIDNoMTd2MmgtMTd2LTJabTAgM2g4djJoLTh2LTJabTAgM2gxN3YyaC0xN3YtMlptMCAzaDE3djJoLTE3di0yWm0wIDNoOHYyaC04di0yWm0wIDNoOHYyaC04di0yWm0wIDNoOHYyaC04di0yWiIvPjwvc3ZnPg==
