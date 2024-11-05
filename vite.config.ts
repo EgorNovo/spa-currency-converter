@@ -12,6 +12,7 @@ export default defineConfig({
   resolve: {
     alias: {
       'src': path.resolve(packageRoot, './src'),
+      'assets': path.resolve(packageRoot, './src/shared/assets')
     },
   },
 })

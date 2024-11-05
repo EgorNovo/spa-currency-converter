@@ -1,7 +1,13 @@
 import React, { FunctionComponent } from 'react'
+import Header  from '../shared/header'
 
-export const App: FunctionComponent = () => (
-  <div>
-    App
-  </div>
+const App: FunctionComponent = () => (
+  <>  
+    <Header />
+    <div>
+      App
+    </div>
+  </>
 )
+
+export default App;
