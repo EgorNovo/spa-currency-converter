@@ -1,4 +1,10 @@
 .layout {
   width: 50vw;
   height: 50vh;
+  border: 5px solid gray;
+  border-radius: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

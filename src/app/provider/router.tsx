@@ -1,5 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from '../../widgets/layout/Layout';
+import Base from '../../pages/base/base'
+import Currency from '../../pages/currency/currency'
+
 
 const router = createBrowserRouter([
   {
@@ -8,11 +11,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <h1>Main</h1>
+        element: <Base />
       },
       {
         path: '/currency',
-        element: <h1>Currency</h1>
+        element: <Currency />
       }
     ]
   }
