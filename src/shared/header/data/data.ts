@@ -7,10 +7,6 @@ const links = [
     path: '/currency',
     title: 'Currency',
   },
-  {
-    path: '/base',
-    title: 'Base',
-  },
 ]
 
 export default links;

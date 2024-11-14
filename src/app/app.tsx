@@ -1,13 +1,8 @@
-import React, { FunctionComponent } from 'react'
-import Header  from '../shared/header'
+import { FC } from 'react'
+import { RouterProvider } from 'react-router-dom'
 
-const App: FunctionComponent = () => (
-  <>  
-    <Header />
-    <div>
-      App
-    </div>
-  </>
-)
+import router from './provider/router'
+
+const App: FC = () => <RouterProvider router={router}></RouterProvider>
 
 export default App;
