@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import links  from './data/data'
 import Logo from '../assets/Logo/Logo'
-import Link from './ui/Link'
+import LinkComponent from './ui/Link'
 
 const Header: FC = () => {
   return (
@@ -9,7 +9,7 @@ const Header: FC = () => {
       <Logo />
       <nav>
         <ul>
-          {links.map( link => <Link path={link.path} title={link.title}/>)}
+          {links.map( link => <LinkComponent path={link.path} title={link.title}/>)}
         </ul>
       </nav>
     </header>
