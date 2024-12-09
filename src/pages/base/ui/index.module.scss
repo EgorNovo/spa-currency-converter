@@ -1,0 +1,16 @@
+.base {
+  display: flex;
+  flex-direction: column;
+}
+
+.select, .label {
+  align-self: flex-end;
+}
+
+.iconRow {
+  position: absolute;
+  width: calc(100% - 100px);
+  top: 45%;
+  display: flex;
+  justify-content: space-between;
+}

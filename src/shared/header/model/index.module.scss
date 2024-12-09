@@ -1,0 +1,10 @@
+.link {
+
+  &:hover {
+    color: gray;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
