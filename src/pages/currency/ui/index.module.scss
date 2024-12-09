@@ -1,0 +1,18 @@
+.currencyRow {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cardLine {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: calc(100% + 50px * 2);
+  left: -50px;
+  top: -10vw;
+}
+
+.relative {
+  position: relative;
+}

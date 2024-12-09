@@ -1,11 +1,11 @@
 const links = [
   {
     path: '/',
-    title: 'Home',
+    title: 'Base',
   },
   {
-    path: '/currency',
-    title: 'Currency',
+    path: '/ratio',
+    title: 'Ratio',
   },
 ]
 

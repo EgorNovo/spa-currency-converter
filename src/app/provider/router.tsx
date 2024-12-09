@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from '../../widgets/layout/Layout';
-import Base from '../../pages/base/base'
-import Currency from '../../pages/currency/currency'
+import Base from '../../pages/base/ui/base'
+import Currency from '../../pages/currency/ui/currency'
 
 
 const router = createBrowserRouter([
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         element: <Base />
       },
       {
-        path: '/currency',
+        path: '/ratio',
         element: <Currency />
       }
     ]

@@ -15,14 +15,14 @@ const ExchangeRateComponent: FC<ExchangeRateComponentProps> = ({
   return (
     <div>
       <ul className={styles.list}>
-        <li>
-          Base currency: {baseCurrency}
+        <li className={styles.item}>
+          <span>Base cur:</span> <span>{baseCurrency}</span>
         </li>
-        <li>
-          Target currency: {targetCurrency}
+        <li className={styles.item}>
+          <span>Target cur:</span> <span>{targetCurrency}</span>
         </li>
-        <li>
-          Exchange rate: {exchangeRate} 
+        <li className={styles.item}>
+          <span>Rate:</span> <span>{exchangeRate}</span>
         </li>
       </ul>
     </div>

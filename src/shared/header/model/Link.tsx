@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom';
+import styles from './index.module.scss';
 
 type LinkProps = {
   path: string;
@@ -8,7 +9,10 @@ type LinkProps = {
 
 const LinkComponent: FC<LinkProps> = ( { path, title }:LinkProps ) => {
   return (
-    <Link to = {path}>{title}</Link>
+    <NavLink 
+      to = {path} 
+      className={ styles.link } 
+    >{title}</NavLink>
   )
 };
 
